@@ -1,4 +1,10 @@
-# React + Vite
+# InnoGenesis
+
+This project uses the React + Vite setup for frontend development.
+
+---
+
+## React + Vite Setup
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
