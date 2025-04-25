@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-accent-navy bg-secondary;
+  }
+
+  .parallax {
+    @apply relative overflow-hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax-overlay {
+    @apply absolute inset-0 bg-black/40;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-secondary rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-accent-navy text-secondary rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300;
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .heading {
+    @apply text-4xl md:text-5xl font-bold text-primary;
+  }
+
+  .subheading {
+    @apply text-xl text-tertiary mt-4 max-w-2xl;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-primary;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-lg p-6;
+  }
+
+  .card-hover {
+    @apply hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .parallax-content {
+    @apply relative z-10 text-white;
+  }
+}
